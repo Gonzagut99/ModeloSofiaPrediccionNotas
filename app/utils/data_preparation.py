@@ -43,11 +43,6 @@ class DataPreparationService:
         return X, y
 
     def encode_categorical_variables(self, X):
-        # Codificar variables categóricas
-        # self.label_encoders = {col: LabelEncoder().fit(X[col]) for col in X.columns}
-        # for col, encoder in self.label_encoders.items():
-        #     X[col] = encoder.transform(X[col])
-        # return X
         # Codificar variables categóricas sin modificar el DataFrame original
         X_encoded = X.copy() #Para asegurar que no modifiquemos el DataFrame original X.
         self.label_encoders = {col: LabelEncoder().fit(X_encoded[col]) for col in X_encoded.columns}

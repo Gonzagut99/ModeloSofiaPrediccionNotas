@@ -12,6 +12,17 @@ Para instalar las dependencias necesarias, ejecute el siguiente comando:
 pip install -r requirements.txt
 ```
 
+## Activacion del entorno de python venv
+En windows
+```bash
+venv/Scripts/activate 
+```
+
+## Ejecucion del entrenamiento y validación del modelo para generar el modelo joblib y los encoders de las variables categoricas
+```bash
+python -m app.ml_models.score_prediction_model
+```
+
 ## Ejecución del proyecto
 
 Para ejecutar el proyecto en el puerto 8000, utilice el siguiente comando:
