@@ -7,7 +7,8 @@ Este proyecto tiene como objetivo predecir las notas de los estudiantes utilizan
 ## 1. Activacion del entorno de python venv
 En windows
 ```bash
-venv/Scripts/activate 
+python -m venv venv  #Primero se crea el entorno     
+venv/Scripts/activate #Despues se activa
 ```
 
 ## 2. Instalación de dependencias
